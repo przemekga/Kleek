@@ -1,0 +1,64 @@
+.moreInfo {
+	height: 936px;
+	background-color: #e4e0de;
+
+	.details {
+		//width: 524px;
+		//margin-left: $marginLeft;
+		margin-top: 87px;
+
+		.info {
+			border-bottom: 2px solid #a97852;
+			margin-bottom: 3.1rem;
+
+			li {
+				margin-bottom: 4.2rem;
+			}
+		}
+
+
+		span {
+			float: left;
+			width: 4.7rem;
+			text-align: center;
+		}
+		
+		h4 {
+			font-family: "Brandon blk";
+			margin-top: .8rem;
+		}
+		
+		p {
+			font-family: "Roboto light";
+			margin-bottom: 0;
+		}
+
+		.infoText {
+			overflow: hidden;
+			padding-left: 3.2rem;
+		}		
+	}
+
+
+	.tagSection {
+		display: inline-flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		//margin-left: $marginLeft;
+		margin-top: .7rem;
+		height: auto;
+		width: 570px;
+
+		.tags {
+			background-color: #eeeeee;
+			height: 4.4rem;
+			line-height: 4.4rem;
+			margin-right: 1rem;
+			margin-bottom: 0.9rem;
+			padding-right: 2.5rem;
+			padding-left: 2.5rem;
+			font-family: "Brandon";
+			text-transform: uppercase;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.calendar {
+	font-family: 'Brandon';
+	height: 6.7rem;
+	line-height: 6.7rem;
+	background-color: #ffffff;
+	//margin: 0;
+
+	.backEvent {
+		padding-left: 4.8rem;
+		padding-right: 0;
+
+		i {
+			margin-right: 2rem;
+			font-size: 2rem;
+		}
+	}
+
+	.dates {
+		background-color: #ffffff;
+		height: inherit;
+		padding: 0;
+		text-align: right;
+		
+		.day {
+			display: inline-block;
+			height: inherit;
+			width: 6.6rem;
+			margin-right: 1rem;
+			background-color: #fbfbfb;
+
+		}
+
+		.day:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	.calendarBtn {
+		padding-left: 6.7rem;
+		padding-right: 0;
+	
+		i {
+	    
+			margin-right: 1.8rem;
+			font-size: 2.4rem;
+		}	
+	}
+
+	.preview {
+		text-align: right;
+		padding-right: 4.8rem;
+		padding-left: 0;
+		i {
+			margin-left: 2rem;
+			font-size: 2rem;
+		}
+	}
+}
