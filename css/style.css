@@ -2839,10 +2839,26 @@ header {
         float: left;
         text-align: center;
         width: 10.4rem;
-        margin-top: 2.1rem; }
+        padding-top: 2.1rem; }
       .featured .feat .item .itemText {
-        margin-top: 2.9rem;
-        display: block;
-        height: 9.5rem; }
+        padding-top: 2rem;
+        display: inline-block;
+        height: 9.5rem;
+        color: #e0e0e0;
+        max-width: 49.1rem; }
         .featured .feat .item .itemText h4 {
           margin-bottom: .4rem; }
+        .featured .feat .item .itemText p {
+          font-size: 1.4rem; }
+      .featured .feat .item .price {
+        display: inline-block;
+        float: right;
+        width: auto;
+        margin-top: 3.1rem;
+        margin-right: 3.2rem;
+        font-family: "Brandon light";
+        font-size: 2.4rem;
+        color: #9d7353; }
+        .featured .feat .item .price img {
+          padding-bottom: .6rem;
+          padding-left: 2rem; }
