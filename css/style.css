@@ -2640,6 +2640,12 @@ table th[class*="col-"] {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Alagreya italic';
+  src: url(../fonts/Alegreya-Italic.otf);
+  font-weight: normal;
+  font-style: normal; }
+
 header {
   background-color: #1b1b1b;
   height: 8.2rem; }
@@ -2719,14 +2725,16 @@ header {
     font-size: 1.8rem;
     margin-top: 109px;
     margin-right: 0;
-    display: inline-block; }
+    display: inline-block;
+    word-spacing: 6px; }
     .basics .basicsText h2 {
-      font-family: "Times New Roman";
+      font-family: "Brandon blk";
       font-size: 1.8rem;
       margin-top: 0; }
     .basics .basicsText p {
       margin-bottom: 4.5rem;
-      word-break: break-all; }
+      word-break: break-all;
+      line-height: 3.1rem; }
   .basics .scrollingFrame {
     display: inline-block;
     margin-top: 80px;
@@ -2748,15 +2756,18 @@ header {
       float: left;
       width: 4.7rem;
       text-align: center; }
-    .moreInfo .details h4 {
-      font-family: "Brandon blk";
-      margin-top: .8rem; }
-    .moreInfo .details p {
-      font-family: "Roboto light";
-      margin-bottom: 0; }
     .moreInfo .details .infoText {
       overflow: hidden;
       padding-left: 3.2rem; }
+      .moreInfo .details .infoText h4 {
+        font-family: "Brandon blk";
+        margin-top: .8rem; }
+      .moreInfo .details .infoText p {
+        font-family: "Roboto light";
+        margin-bottom: 0;
+        word-spacing: 7px;
+        line-height: 31px;
+        font-weight: bold; }
   .moreInfo .tagSection {
     display: inline-flex;
     flex-wrap: wrap;
@@ -2811,54 +2822,170 @@ header {
     .location .showDirection span {
       margin-left: 5.6rem;
       margin-right: 5.6rem; }
-  .location .map {
+
+.map-wrap {
+  position: relative; }
+  .map-wrap .map {
     background-color: #E1E1E1;
-    height: 100%; }
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: calc( 50% - 100px);
+    width: calc( 50% + 100px); }
 
 .featured {
   height: 108rem;
   background-color: #1b1b1b;
   color: #fefefe; }
-  .featured .feat {
-    margin-top: 9.8rem;
-    width: 63.3rem; }
+  .featured .row {
+    margin-top: 9.8rem; }
+  .featured .feat .featuredText {
+    margin-bottom: 4rem; }
     .featured .feat .featuredText h4 {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-bottom: 3.5rem;
+      font-family: "Brandon";
+      color: #fefefe; }
     .featured .feat .featuredText p {
       color: #e0e0e0;
       font-size: 1.6rem;
-      margin: 0; }
-    .featured .feat .item {
+      margin: 0;
+      font-family: "Roboto light"; }
+  .featured .feat .items {
+    margin-bottom: 9.4rem; }
+    .featured .feat .items h4 {
+      text-transform: uppercase;
+      margin-bottom: 3.5rem;
+      font-family: "Brandon"; }
+    .featured .feat .items p {
+      color: #e0e0e0;
+      font-size: 1.6rem;
+      margin: 0;
+      font-family: "Roboto light";
+      margin-bottom: 4.4rem; }
+    .featured .feat .items .item {
       border-bottom: 2px solid #9d7353;
       border-left: 2px solid #9d7353;
       border-right: 2px solid #9d7353;
       height: 9.5rem; }
-      .featured .feat .item:first-of-type {
+      .featured .feat .items .item:first-of-type {
         border-top: 2px solid #9d7353; }
-      .featured .feat .item .itemIcon {
+      .featured .feat .items .item .itemIcon {
         float: left;
         text-align: center;
         width: 10.4rem;
         padding-top: 2.1rem; }
-      .featured .feat .item .itemText {
-        padding-top: 2rem;
+      .featured .feat .items .item .itemText {
+        padding-top: 1.5rem;
         display: inline-block;
-        height: 9.5rem;
-        color: #e0e0e0;
-        max-width: 49.1rem; }
-        .featured .feat .item .itemText h4 {
-          margin-bottom: .4rem; }
-        .featured .feat .item .itemText p {
-          font-size: 1.4rem; }
-      .featured .feat .item .price {
+        color: #e0e0e0; }
+        .featured .feat .items .item .itemText h4 {
+          font-family: "Brandon";
+          text-transform: uppercase;
+          margin-bottom: .4rem;
+          color: #fefefe; }
+        .featured .feat .items .item .itemText p {
+          font-family: "Brandon light";
+          font-size: 1.6rem;
+          white-space: nowrap;
+          width: 320px;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+      .featured .feat .items .item .price {
         display: inline-block;
         float: right;
         width: auto;
         margin-top: 3.1rem;
-        margin-right: 3.2rem;
+        padding-right: .5rem;
         font-family: "Brandon light";
         font-size: 2.4rem;
         color: #9d7353; }
-        .featured .feat .item .price img {
+        .featured .feat .items .item .price span {
+          margin-right: .5rem; }
+        .featured .feat .items .item .price img {
           padding-bottom: .6rem;
-          padding-left: 2rem; }
+          padding-left: .5rem;
+          padding-right: 1.2rem; }
+          .featured .feat .items .item .price img:hover {
+            cursor: pointer; }
+    .featured .feat .items .showAll {
+      text-transform: uppercase;
+      color: #9d7353;
+      font-family: "Brandon";
+      font-size: 1.3rem;
+      font-weight: bold;
+      word-spacing: .2rem;
+      letter-spacing: .2rem;
+      float: right;
+      margin-top: 4.4rem;
+      text-decoration: none; }
+      .featured .feat .items .showAll:hover {
+        cursor: pointer; }
+  .featured .bookingDetails {
+    border: 2px solid #a0a0a0;
+    height: 502px; }
+    .featured .bookingDetails .detailsContent {
+      margin-top: 12.3505%;
+      margin-left: 10.9756%;
+      height: 81.6733%;
+      width: 77.6699%; }
+      .featured .bookingDetails .detailsContent h1 {
+        text-transform: uppercase;
+        font-size: 2.1rem;
+        font-family: "Brandon blk";
+        letter-spacing: 3px; }
+      .featured .bookingDetails .detailsContent h2 {
+        color: #e0e0e0;
+        text-transform: uppercase;
+        font-family: "Roboto light";
+        font-size: 1.6rem;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+        margin-bottom: 0; }
+      .featured .bookingDetails .detailsContent h3 {
+        color: #9d7353;
+        font-family: "Alagreya Italic";
+        font-weight: normal;
+        border-bottom: 2px solid #9d7353;
+        padding-bottom: 26px;
+        margin-top: 30px; }
+      .featured .bookingDetails .detailsContent .date {
+        color: #e0e0e0;
+        font-family: "Alagreya Italic";
+        font-size: 2.1rem;
+        font-weight: 10; }
+        .featured .bookingDetails .detailsContent .date:first-of-type {
+          margin-top: 30px; }
+        .featured .bookingDetails .detailsContent .date .detailsIcon {
+          display: inline-block;
+          width: 17px;
+          text-align: center;
+          margin-left: 3px;
+          margin-right: 10px; }
+      .featured .bookingDetails .detailsContent .bookNow {
+        width: 100%;
+        height: 5.2rem;
+        line-height: 5.2rem;
+        background-color: #a97852;
+        font-family: "Brandon";
+        font-size: 1.6rem;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 11.5537%;
+        letter-spacing: 3px;
+        word-spacing: 8px; }
+        .featured .bookingDetails .detailsContent .bookNow:hover {
+          cursor: pointer; }
+      .featured .bookingDetails .detailsContent .media {
+        text-align: center;
+        height: 46px;
+        margin-top: 8.3665%; }
+        .featured .bookingDetails .detailsContent .media a {
+          margin-right: 8.06451%; }
+          .featured .bookingDetails .detailsContent .media a:last-child {
+            margin-right: 0; }
+          .featured .bookingDetails .detailsContent .media a:hover {
+            cursor: pointer; }
+        .featured .bookingDetails .detailsContent .media img {
+          vertical-align: text-top; }

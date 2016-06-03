@@ -3,80 +3,235 @@
 	background-color: #1b1b1b;
 	color: #fefefe;
 
-	.feat {
-		//margin-left: $marginLeft;
+	.row {
 		margin-top: 9.8rem;
-		width: 63.3rem;
+	}
 
-		.featuredText {
+		.feat {
+			//width: 63.3rem;
 
-			h4 {
-				text-transform: uppercase;
-				//margin: 0;
-			}
-
-			p {
-				color: #e0e0e0;
-				font-size: 1.6rem;
-				margin: 0;
-			}
-		}
-		
-
-
-		.item {
-			border-bottom: 2px solid #9d7353;
-			border-left: 2px solid #9d7353;
-			border-right: 2px solid #9d7353;
-			height: 9.5rem;
-
-			&:first-of-type {
-				border-top: 2px solid #9d7353;
-			}
-
-			.itemIcon {
-				float: left;
-				text-align: center;
-				width: 10.4rem;
-				padding-top: 2.1rem;
-			}
-
-			.itemText {
-				padding-top: 2rem;
-				display: inline-block;
-				height: 9.5rem;
-				color: #e0e0e0;
-				max-width: 49.1rem;
-
+			.featuredText {
+				margin-bottom: 4rem;
 
 				h4 {
-					margin-bottom: .4rem;
+					text-transform: uppercase;
+					margin-bottom: 3.5rem;
+					font-family: "Brandon";
+					color: #fefefe;
 				}
 
 				p {
-					font-size: 1.4rem;
+					color: #e0e0e0;
+					font-size: 1.6rem;
+					margin: 0;
+					font-family: "Roboto light";
+				}
+			}
+			
+		.items {
+			margin-bottom: 9.4rem;
+				
+				h4 {
+					text-transform: uppercase;
+					margin-bottom: 3.5rem;
+					font-family: "Brandon";
+				}
+
+				p {
+					color: #e0e0e0;
+					font-size: 1.6rem;
+					margin: 0;
+					font-family: "Roboto light";
+					margin-bottom: 4.4rem;
+				}
+			
+			.item {
+				border-bottom: 2px solid #9d7353;
+				border-left: 2px solid #9d7353;
+				border-right: 2px solid #9d7353;
+				height: 9.5rem;
+
+
+				&:first-of-type {
+					border-top: 2px solid #9d7353;
+				}
+
+				.itemIcon {
+					float: left;
+					text-align: center;
+					width: 10.4rem;
+					padding-top: 2.1rem;
+				}
+
+				.itemText {
+					padding-top: 1.5rem;
+					display: inline-block;
+					//height: 9.5rem;
+					color: #e0e0e0;
+					//max-width: 49.1rem;
+
+					h4 {
+						font-family: "Brandon";
+						text-transform: uppercase; 
+						margin-bottom: .4rem;
+						color: #fefefe;
+					}
+
+					p {
+						font-family: "Brandon light";
+						font-size: 1.6rem;
+						white-space: nowrap;
+					  width: 320px;                   
+					  overflow: hidden;
+					  text-overflow: ellipsis;
+					}
+				}
+
+				.price {
+					display: inline-block;
+					float: right;
+					width: auto;
+					margin-top: 3.1rem;
+					padding-right: .5rem;
+					font-family: "Brandon light";
+					font-size: 2.4rem;
+					color: #9d7353;
+
+					span {
+						margin-right: .5rem;
+					}
+
+
+					img {
+						padding-bottom: .6rem;
+						padding-left: .5rem;
+						padding-right: 1.2rem;
+
+						&:hover {
+							cursor: pointer;
+						}
+					}
 				}
 			}
 
-			.price {
-				display: inline-block;
-				float: right;
-				width: auto;
-				margin-top: 3.1rem;
-				margin-right: 3.2rem;
-				font-family: "Brandon light";
-				font-size: 2.4rem;
+			.showAll {
+				text-transform: uppercase;
 				color: #9d7353;
+				font-family: "Brandon";
+				font-size: 1.3rem;
+				font-weight: bold;
+				word-spacing: .2rem;
+				letter-spacing: .2rem;
+				float: right;
+				margin-top: 4.4rem;
+				text-decoration: none;
 
-				img {
-					padding-bottom: .6rem;
-					padding-left: 2rem;
+				&:hover {
+					cursor: pointer;
 				}
 			}
 		}
+	}
 
-		// .items > div:first-of-type {
-		// 	border-top: 2px solid #9d7353;
-		// }
+	.bookingDetails {
+		border: 2px solid #a0a0a0;
+		height: 502px;
+
+		.detailsContent {
+			margin-top: 12.3505%;
+			margin-left: 10.9756%;
+			height: 81.6733%;
+			width: 77.6699%;
+
+			h1 {
+				text-transform: uppercase;
+				font-size: 2.1rem;
+				font-family: "Brandon blk";
+				//word-spacing: 2px;
+				letter-spacing: 3px;
+				//text-align: center;
+			}
+
+			h2 {
+				color: #e0e0e0;
+				text-transform: uppercase;
+				font-family: "Roboto light";
+				font-size: 1.6rem;
+				word-spacing: 2px;
+				letter-spacing: 2px;
+				margin-bottom: 0;
+			}
+
+			h3 {
+				color: #9d7353;
+				font-family: "Alagreya Italic";
+				font-weight: normal;
+				border-bottom: 2px solid #9d7353;
+				padding-bottom: 26px;
+				margin-top: 30px;
+			}
+
+			.date {
+				color: #e0e0e0;
+				font-family: "Alagreya Italic";
+				font-size: 2.1rem;
+				font-weight: 10;
+
+				&:first-of-type {
+					margin-top: 30px;
+				}
+
+				.detailsIcon {
+					display: inline-block;
+					width: 17px;
+					text-align: center;
+					margin-left: 3px;
+					margin-right: 10px;
+				}
+			}
+
+			.bookNow {
+				width: 100%;
+				height: 5.2rem;
+				line-height: 5.2rem;
+				background-color: #a97852;
+				font-family: "Brandon";
+				font-size: 1.6rem;
+				color: #fff;
+				text-transform: uppercase;
+				text-align: center;
+				margin-top: 11.5537%;
+				letter-spacing: 3px;
+				word-spacing: 8px;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			.media {
+				text-align: center;
+				height: 46px;
+				margin-top: 8.3665%;
+				
+				a {
+				  margin-right: 8.06451%;
+
+					&:last-child {
+			    	margin-right: 0;
+			  	}
+
+			  	&:hover {
+			  		cursor: pointer;
+			  	}
+				}
+
+				img {
+			    vertical-align: text-top;
+				}
+
+
+			}
+		}
 	}
 }

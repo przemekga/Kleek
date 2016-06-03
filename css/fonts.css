@@ -21,3 +21,9 @@
   src: url(../fonts/Roboto-Light.ttf);
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Alagreya italic';
+  src: url(../fonts/Alegreya-Italic.otf);
+  font-weight: normal;
+  font-style: normal; }
