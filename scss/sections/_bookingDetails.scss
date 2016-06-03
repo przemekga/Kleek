@@ -1,0 +1,101 @@
+.bookingDetails {
+		border: 2px solid #a0a0a0;
+		height: 502px;
+		background-color: #1b1b1b;
+
+		.detailsContent {
+			margin-top: 12.3505%;
+			margin-left: 10.9756%;
+			height: 81.6733%;
+			width: 77.6699%;
+
+			h1 {
+				color: #fefefe;
+				text-transform: uppercase;
+				font-size: 2.1rem;
+				font-family: "Brandon blk";
+				//word-spacing: 2px;
+				letter-spacing: 3px;
+				//text-align: center;
+			}
+
+			h2 {
+				color: #e0e0e0;
+				text-transform: uppercase;
+				font-family: "Roboto light";
+				font-size: 1.6rem;
+				word-spacing: 2px;
+				letter-spacing: 2px;
+				margin-bottom: 0;
+			}
+
+			h3 {
+				color: #9d7353;
+				font-family: "Alagreya Italic";
+				font-weight: normal;
+				border-bottom: 2px solid #9d7353;
+				padding-bottom: 26px;
+				margin-top: 30px;
+			}
+
+			.date {
+				color: #e0e0e0;
+				font-family: "Alagreya Italic";
+				font-size: 2.1rem;
+				font-weight: 10;
+
+				&:first-of-type {
+					margin-top: 30px;
+				}
+
+				.detailsIcon {
+					display: inline-block;
+					width: 17px;
+					text-align: center;
+					margin-left: 3px;
+					margin-right: 10px;
+				}
+			}
+
+			.bookNow {
+				width: 100%;
+				height: 5.2rem;
+				line-height: 5.2rem;
+				background-color: #a97852;
+				font-family: "Brandon";
+				font-size: 1.6rem;
+				color: #fff;
+				text-transform: uppercase;
+				text-align: center;
+				margin-top: 11.5537%;
+				letter-spacing: 3px;
+				word-spacing: 8px;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			.media {
+				text-align: center;
+				height: 46px;
+				margin-top: 12.3665%;
+				
+				a {
+				  margin-right: 8.06451%;
+
+					&:last-child {
+			    	margin-right: 0;
+			  	}
+
+			  	&:hover {
+			  		cursor: pointer;
+			  	}
+				}
+
+				img {
+			    vertical-align: text-top;
+				}
+			}
+		}
+	}

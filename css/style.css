@@ -2643,7 +2643,7 @@ table th[class*="col-"] {
 @font-face {
   font-family: 'Alagreya italic';
   src: url(../fonts/Alegreya-Italic.otf);
-  font-weight: normal;
+  font-weight: 100;
   font-style: normal; }
 
 header {
@@ -2718,12 +2718,12 @@ header {
 .basics {
   height: 66.5rem;
   background-color: #ffffff;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 109px; }
   .basics .basicsText {
     height: 47.6rem;
     font-family: "Roboto light";
     font-size: 1.8rem;
-    margin-top: 109px;
     margin-right: 0;
     display: inline-block;
     word-spacing: 6px; }
@@ -2735,12 +2735,78 @@ header {
       margin-bottom: 4.5rem;
       word-break: break-all;
       line-height: 3.1rem; }
-  .basics .scrollingFrame {
-    display: inline-block;
-    margin-top: 80px;
-    width: 100%;
-    height: 506px;
+  .basics .bookingDetails {
+    border: 2px solid #a0a0a0;
+    height: 502px;
     background-color: #1b1b1b; }
+    .basics .bookingDetails .detailsContent {
+      margin-top: 12.3505%;
+      margin-left: 10.9756%;
+      height: 81.6733%;
+      width: 77.6699%; }
+      .basics .bookingDetails .detailsContent h1 {
+        color: #fefefe;
+        text-transform: uppercase;
+        font-size: 2.1rem;
+        font-family: "Brandon blk";
+        letter-spacing: 3px; }
+      .basics .bookingDetails .detailsContent h2 {
+        color: #e0e0e0;
+        text-transform: uppercase;
+        font-family: "Roboto light";
+        font-size: 1.6rem;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+        margin-bottom: 0; }
+      .basics .bookingDetails .detailsContent h3 {
+        color: #9d7353;
+        font-family: "Alagreya Italic";
+        font-weight: normal;
+        border-bottom: 2px solid #9d7353;
+        padding-bottom: 26px;
+        margin-top: 30px; }
+      .basics .bookingDetails .detailsContent .date {
+        color: #e0e0e0;
+        font-family: "Alagreya Italic";
+        font-size: 2.1rem;
+        font-weight: 10; }
+        .basics .bookingDetails .detailsContent .date:first-of-type {
+          margin-top: 30px; }
+        .basics .bookingDetails .detailsContent .date .detailsIcon {
+          display: inline-block;
+          width: 17px;
+          text-align: center;
+          margin-left: 3px;
+          margin-right: 10px; }
+      .basics .bookingDetails .detailsContent .bookNow {
+        width: 100%;
+        height: 5.2rem;
+        line-height: 5.2rem;
+        background-color: #a97852;
+        font-family: "Brandon";
+        font-size: 1.6rem;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 11.5537%;
+        letter-spacing: 3px;
+        word-spacing: 8px; }
+        .basics .bookingDetails .detailsContent .bookNow:hover {
+          cursor: pointer; }
+      .basics .bookingDetails .detailsContent .media {
+        text-align: center;
+        height: 46px;
+        margin-top: 12.3665%; }
+        .basics .bookingDetails .detailsContent .media a {
+          margin-right: 8.06451%; }
+          .basics .bookingDetails .detailsContent .media a:last-child {
+            margin-right: 0; }
+          .basics .bookingDetails .detailsContent .media a:hover {
+            cursor: pointer; }
+        .basics .bookingDetails .detailsContent .media img {
+          vertical-align: text-top; }
+  .basics .bookingDetails {
+    border: 2px solid #1b1b1b; }
 
 .moreInfo {
   height: 936px;
@@ -2923,13 +2989,15 @@ header {
         cursor: pointer; }
   .featured .bookingDetails {
     border: 2px solid #a0a0a0;
-    height: 502px; }
+    height: 502px;
+    background-color: #1b1b1b; }
     .featured .bookingDetails .detailsContent {
       margin-top: 12.3505%;
       margin-left: 10.9756%;
       height: 81.6733%;
       width: 77.6699%; }
       .featured .bookingDetails .detailsContent h1 {
+        color: #fefefe;
         text-transform: uppercase;
         font-size: 2.1rem;
         font-family: "Brandon blk";
@@ -2980,7 +3048,7 @@ header {
       .featured .bookingDetails .detailsContent .media {
         text-align: center;
         height: 46px;
-        margin-top: 8.3665%; }
+        margin-top: 12.3665%; }
         .featured .bookingDetails .detailsContent .media a {
           margin-right: 8.06451%; }
           .featured .bookingDetails .detailsContent .media a:last-child {
@@ -2989,3 +3057,139 @@ header {
             cursor: pointer; }
         .featured .bookingDetails .detailsContent .media img {
           vertical-align: text-top; }
+
+.events {
+  background-color: #f7f8f9;
+  position: relative; }
+  .events .arrowLeft {
+    position: absolute;
+    float: left;
+    overflow: hidden;
+    top: 450px;
+    left: 5%; }
+  .events .arrowRight {
+    position: absolute;
+    top: 450px;
+    right: 5%;
+    transform: scaleX(-1);
+    filter: FlipH; }
+
+.venueName {
+  margin-top: 100px;
+  text-align: center;
+  text-transform: uppercase; }
+  .venueName h1 {
+    font-family: "Brandon blk";
+    font-size: 2.6rem;
+    word-spacing: 2px;
+    margin-bottom: 0;
+    margin-top: 0; }
+  .venueName h2 {
+    font-family: "Brandon light";
+    font-size: 1.7rem;
+    font-weight: 500;
+    word-spacing: 3px;
+    margin-top: 5px;
+    letter-spacing: 1px; }
+
+.eventList {
+  margin-top: 87px; }
+
+.event {
+  height: 552px; }
+  .event .photo {
+    width: 100%;
+    height: auto; }
+  .event .eventDetails {
+    background-color: #1b1b1b;
+    padding-top: 11.2179%;
+    padding-left: 12.6213%;
+    padding-right: 12.6213%;
+    height: 312px;
+    border-top: 2px solid #a97852; }
+    .event .eventDetails h1 {
+      display: inline-block;
+      color: #fefefe;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      font-family: "Brandon blk";
+      margin: 0;
+      letter-spacing: 2px; }
+    .event .eventDetails img {
+      display: inline-block;
+      margin-bottom: 5px;
+      float: right; }
+    .event .eventDetails .line {
+      margin: 0 auto;
+      margin-top: 22px;
+      width: 12.8640%;
+      border-bottom: 1px solid #a97852; }
+    .event .eventDetails .eventDate {
+      text-align: center;
+      color: #e0e0e0;
+      font-family: "Alagreya Italic";
+      font-size: 2.1rem;
+      margin-top: 18px; }
+    .event .eventDetails .eventPrices {
+      text-align: center;
+      text-transform: uppercase;
+      color: #a97852;
+      font-family: "Brandon light";
+      font-size: 1.8rem;
+      margin-top: 3px;
+      margin-bottom: 0;
+      word-spacing: 2px;
+      letter-spacing: 2px; }
+      .event .eventDetails .eventPrices span {
+        font-family: "Brandon blk"; }
+    .event .eventDetails .bookNow {
+      width: 100%;
+      height: 5.2rem;
+      line-height: 5.2rem;
+      background-color: #a97852;
+      font-family: "Brandon";
+      font-size: 1.6rem;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 11.5537%;
+      letter-spacing: 3px;
+      word-spacing: 8px; }
+      .event .eventDetails .bookNow:hover {
+        cursor: pointer; }
+
+.searchBar {
+  background-color: #fff;
+  height: 200px;
+  line-height: 200px;
+  position: relative; }
+  .searchBar .searchForm {
+    border-color: transparent;
+    border-width: 0px;
+    border: none;
+    outline: 0;
+    outline-color: transparent;
+    box-shadow: none; }
+    .searchBar .searchForm::-webkit-input-placeholder {
+      color: black;
+      font-family: "Brandon blk";
+      opacity: none;
+      background-color: #fbfbfb;
+      height: 30px; }
+  .searchBar .search {
+    height: 61px;
+    line-height: 61px;
+    background-color: #1b1b1b;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e0e0e0;
+    font-family: "Brandon";
+    letter-spacing: 2px;
+    border: 0;
+    width: 100%; }
+
+.footer {
+  background-color: #1b1b1b;
+  height: 490px; }
+  .footer h1 {
+    font-size: 2em; }

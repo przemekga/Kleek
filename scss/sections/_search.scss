@@ -1,0 +1,39 @@
+.searchBar {
+	background-color: #fff;
+	height: 200px;
+	line-height: 200px;
+	position: relative;
+
+	.searchForm {
+		border-color: transparent;
+		border-width: 0px;
+		border: none;
+		outline: 0;
+		outline-color: transparent;
+		box-shadow: none;
+
+		&::-webkit-input-placeholder {
+			color: black;
+			font-family: "Brandon blk";
+			opacity: none;
+			background-color: #fbfbfb;
+			height: 30px;
+		}
+	}
+
+
+	.search {
+		//margin-top: 36%;
+		height: 61px;
+		line-height: 61px;
+		background-color: $bgColor;
+		text-transform: uppercase;
+		text-align: center;
+		color: #e0e0e0;
+		font-family: "Brandon";
+		letter-spacing: 2px;
+		border: 0;
+		width: 100%;
+	}
+}
+

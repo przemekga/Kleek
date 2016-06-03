@@ -1,0 +1,130 @@
+.events {
+	background-color: #f7f8f9;
+	position: relative;
+
+	.arrowLeft {
+		position: absolute;
+		float: left;
+		overflow: hidden;
+		top: 450px;
+		left: 5%;
+	}
+
+	.arrowRight {
+		position: absolute;
+		top: 450px;
+		right: 5%;
+		transform: scaleX(-1);
+    filter: FlipH;
+	}
+} 
+
+.venueName {
+	margin-top: 100px;
+	text-align: center;
+	text-transform: uppercase;
+
+	h1 {
+		font-family: "Brandon blk";
+		font-size: 2.6rem;
+		word-spacing: 2px;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	h2 {
+		font-family: "Brandon light";
+		font-size: 1.7rem;
+		font-weight: 500;
+		word-spacing: 3px;
+		margin-top: 5px;
+		letter-spacing: 1px;
+	}
+}
+
+.eventList {
+	margin-top: 87px;
+}
+
+.event {
+	height: 552px;
+
+	.photo {
+    width: 100%;
+    height: auto;
+	}
+
+	.eventDetails {
+		background-color: $bgColor;
+		padding-top: 11.2179%;
+		padding-left: 12.6213%;
+		padding-right: 12.6213%;
+		height: 312px;
+		border-top: 2px solid $borderColor;
+
+		h1 {
+			display: inline-block;
+			color: #fefefe;
+			text-transform: uppercase;
+			font-size: 1.8rem;
+			font-family: "Brandon blk";
+			margin: 0;
+			letter-spacing: 2px;
+		}
+
+		img {
+			display: inline-block;
+			margin-bottom: 5px;
+			float: right;
+		}
+
+		.line {
+			margin: 0 auto;
+			margin-top: 22px;
+			width: 12.8640%;
+			border-bottom: 1px solid $borderColor;
+		}
+		
+		.eventDate {
+			text-align: center;
+			color: #e0e0e0;
+			font-family: "Alagreya Italic";
+			font-size: 2.1rem;
+			margin-top: 18px;
+		}
+
+		.eventPrices {
+			text-align: center;
+			text-transform: uppercase;
+			color: $borderColor;
+			font-family: "Brandon light";
+			font-size: 1.8rem;
+			margin-top: 3px;
+			margin-bottom: 0;
+			word-spacing: 2px;
+			letter-spacing: 2px;
+
+			span {
+				font-family: "Brandon blk";
+			}
+		}
+
+		.bookNow {
+				width: 100%;
+				height: 5.2rem;
+				line-height: 5.2rem;
+				background-color: #a97852;
+				font-family: "Brandon";
+				font-size: 1.6rem;
+				color: #fff;
+				text-transform: uppercase;
+				text-align: center;
+				margin-top: 11.5537%;
+				letter-spacing: 3px;
+				word-spacing: 8px;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+	}
+}
