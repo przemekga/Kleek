@@ -2656,27 +2656,35 @@ header {
       cursor: pointer;
       padding-left: 4.8rem; }
   header .login {
-    color: white;
     font-family: 'Brandon';
     text-align: right;
     line-height: 8rem;
     font-weight: 1000;
-    padding: 0; }
-    header .login span {
+    padding: 0;
+    word-spacing: 2px;
+    letter-spacing: 1px; }
+    header .login span a {
+      color: white;
       cursor: pointer;
-      margin-right: 4.8rem; }
+      margin-right: 4.8rem;
+      text-decoration: none; }
 
 .calendar {
   font-family: 'Brandon';
+  font-size: 15px;
   height: 6.7rem;
   line-height: 6.7rem;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  letter-spacing: 1px; }
+  .calendar img {
+    margin-bottom: 6px;
+    margin-left: 16px;
+    margin-right: 16px; }
   .calendar .backEvent {
-    padding-left: 4.8rem;
+    padding-left: 3.2rem;
     padding-right: 0; }
-    .calendar .backEvent i {
-      margin-right: 2rem;
-      font-size: 2rem; }
+    .calendar .backEvent:hover {
+      cursor: pointer; }
   .calendar .dates {
     background-color: #ffffff;
     height: inherit;
@@ -2684,49 +2692,158 @@ header {
     text-align: right; }
     .calendar .dates .day {
       display: inline-block;
-      height: inherit;
+      height: 6.7rem;
       width: 6.6rem;
       margin-right: 1rem;
-      background-color: #fbfbfb; }
+      background-color: #fbfbfb;
+      text-align: center;
+      color: #6a6a6a;
+      cursor: pointer; }
+      .calendar .dates .day h1 {
+        font-size: 18px;
+        margin-top: 19px;
+        margin-bottom: 5px;
+        padding: 0; }
+      .calendar .dates .day h2 {
+        font-size: 12px;
+        font-family: "Alagreya italic";
+        margin: 0;
+        padding: 0; }
     .calendar .dates .day:last-child {
       margin-right: 0; }
   .calendar .calendarBtn {
     padding-left: 6.7rem;
-    padding-right: 0; }
+    padding-right: 0;
+    cursor: pointer; }
     .calendar .calendarBtn i {
       margin-right: 1.8rem;
       font-size: 2.4rem; }
   .calendar .preview {
     text-align: right;
-    padding-right: 4.8rem;
+    padding-right: 3.2rem;
     padding-left: 0; }
-    .calendar .preview i {
-      margin-left: 2rem;
-      font-size: 2rem; }
+    .calendar .preview:hover {
+      cursor: pointer; }
 
 .carousel {
   height: 60rem;
-  background-color: #1b1b1b; }
+  background-color: #1b1b1b;
+  position: relative; }
+  .carousel .owl-carousel {
+    position: absolute;
+    height: 600px;
+    top: 0;
+    right: calc( 50% - 100px);
+    width: calc( 50% + 100px); }
+    .carousel .owl-carousel div img {
+      width: 100%;
+      height: inherit; }
   .carousel .images {
     background-color: #3A3A3A;
     height: 100%; }
-  .carousel .details h1 {
-    color: #ffffff;
-    font-size: 2.4rem;
-    font-family: "Brandon blk"; }
+  .carousel .bookingDetails {
+    padding-top: 67px;
+    width: 80%; }
+    .carousel .bookingDetails h1 {
+      display: inline;
+      font-size: 33px;
+      font-family: "Brandon blk";
+      text-transform: uppercase;
+      color: #fefefe;
+      margin-bottom: 0; }
+    .carousel .bookingDetails img {
+      display: inline;
+      margin-left: 16px;
+      margin-bottom: 13px; }
+    .carousel .bookingDetails h2 {
+      text-transform: uppercase;
+      color: #fdfdfd;
+      font-size: 16px;
+      font-family: "Brandon light";
+      letter-spacing: 3px;
+      margin-top: 12px; }
+    .carousel .bookingDetails h3 {
+      color: #9d7353;
+      font-family: "Alagreya Italic";
+      font-weight: normal;
+      margin-top: 20px; }
+    .carousel .bookingDetails .date {
+      color: #e0e0e0;
+      font-family: "Alagreya Italic";
+      font-size: 2.1rem;
+      margin-bottom: 8px; }
+      .carousel .bookingDetails .date:first-of-type {
+        margin-top: 20px; }
+      .carousel .bookingDetails .date div {
+        display: inline-block; }
+      .carousel .bookingDetails .date .detailsIcon {
+        width: 17px;
+        text-align: center;
+        margin-right: 15px; }
+        .carousel .bookingDetails .date .detailsIcon img {
+          margin: 0 auto;
+          padding-bottom: 8px; }
+    .carousel .bookingDetails .border {
+      margin-top: 18px;
+      border-bottom: 2px solid #a97852; }
+    .carousel .bookingDetails .music {
+      font-family: "Brandon light";
+      font-size: 1.6rem;
+      color: #fdfdfd;
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 18px;
+      letter-spacing: 2px; }
+      .carousel .bookingDetails .music .musicRow div {
+        display: inline-block;
+        margin-bottom: 8px; }
+      .carousel .bookingDetails .music .detailsIcon {
+        width: 20px;
+        text-align: center;
+        margin-right: 15px; }
+        .carousel .bookingDetails .music .detailsIcon img {
+          margin: 0 auto;
+          padding-bottom: 8px; }
+    .carousel .bookingDetails .eventPrices {
+      color: #a97852;
+      font-family: "Brandon light";
+      font-size: 1.8rem;
+      margin-top: 3px;
+      margin-bottom: 0;
+      word-spacing: 2px;
+      letter-spacing: 1px; }
+      .carousel .bookingDetails .eventPrices span {
+        font-family: "Brandon blk";
+        text-transform: uppercase;
+        margin-right: 5px; }
+    .carousel .bookingDetails .bookNow {
+      width: 100%;
+      height: 5.2rem;
+      line-height: 5.2rem;
+      background-color: #a97852;
+      font-family: "Brandon";
+      font-size: 1.6rem;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 10px;
+      letter-spacing: 3px;
+      word-spacing: 8px;
+      cursor: pointer; }
 
 .basics {
   height: 66.5rem;
   background-color: #ffffff;
   display: inline-block;
   margin-top: 109px; }
+  .basics .sidebar {
+    position: relative; }
   .basics .basicsText {
     height: 47.6rem;
     font-family: "Roboto light";
     font-size: 1.8rem;
     margin-right: 0;
-    display: inline-block;
-    word-spacing: 6px; }
+    display: inline-block; }
     .basics .basicsText h2 {
       font-family: "Brandon blk";
       font-size: 1.8rem;
@@ -2734,7 +2851,9 @@ header {
     .basics .basicsText p {
       margin-bottom: 4.5rem;
       word-break: break-all;
-      line-height: 3.1rem; }
+      line-height: 3.1rem;
+      color: black;
+      font-weight: 500; }
   .basics .bookingDetails {
     border: 2px solid #a0a0a0;
     height: 502px;
@@ -2790,9 +2909,8 @@ header {
         text-align: center;
         margin-top: 11.5537%;
         letter-spacing: 3px;
-        word-spacing: 8px; }
-        .basics .bookingDetails .detailsContent .bookNow:hover {
-          cursor: pointer; }
+        word-spacing: 8px;
+        cursor: pointer; }
       .basics .bookingDetails .detailsContent .media {
         text-align: center;
         height: 46px;
@@ -2824,24 +2942,26 @@ header {
       text-align: center; }
     .moreInfo .details .infoText {
       overflow: hidden;
-      padding-left: 3.2rem; }
+      padding-left: 3.2rem;
+      font-size: 17px;
+      line-height: 31px; }
       .moreInfo .details .infoText h4 {
         font-family: "Brandon blk";
-        margin-top: .8rem; }
+        margin-top: .8rem;
+        margin-bottom: 5px; }
       .moreInfo .details .infoText p {
         font-family: "Roboto light";
         margin-bottom: 0;
-        word-spacing: 7px;
-        line-height: 31px;
+        word-spacing: 2px;
         font-weight: bold; }
-  .moreInfo .tagSection {
+  .moreInfo .tagSection ul {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: left;
     margin-top: .7rem;
     height: auto;
     width: 570px; }
-    .moreInfo .tagSection .tags {
+    .moreInfo .tagSection ul .tags {
       background-color: #eeeeee;
       height: 4.4rem;
       line-height: 4.4rem;
@@ -2892,8 +3012,7 @@ header {
 .map-wrap {
   position: relative; }
   .map-wrap .map {
-    background-color: #E1E1E1;
-    height: 300px;
+    height: 591px;
     position: absolute;
     top: 0;
     left: calc( 50% - 100px);
@@ -3042,9 +3161,8 @@ header {
         text-align: center;
         margin-top: 11.5537%;
         letter-spacing: 3px;
-        word-spacing: 8px; }
-        .featured .bookingDetails .detailsContent .bookNow:hover {
-          cursor: pointer; }
+        word-spacing: 8px;
+        cursor: pointer; }
       .featured .bookingDetails .detailsContent .media {
         text-align: center;
         height: 46px;
@@ -3161,21 +3279,21 @@ header {
 .searchBar {
   background-color: #fff;
   height: 200px;
-  line-height: 200px;
-  position: relative; }
+  line-height: 200px; }
   .searchBar .searchForm {
     border-color: transparent;
     border-width: 0px;
     border: none;
     outline: 0;
     outline-color: transparent;
-    box-shadow: none; }
+    box-shadow: none;
+    padding: 0;
+    margin: 0; }
     .searchBar .searchForm::-webkit-input-placeholder {
       color: black;
       font-family: "Brandon blk";
       opacity: none;
-      background-color: #fbfbfb;
-      height: 30px; }
+      background-color: #fbfbfb; }
   .searchBar .search {
     height: 61px;
     line-height: 61px;
@@ -3192,4 +3310,36 @@ header {
   background-color: #1b1b1b;
   height: 490px; }
   .footer h1 {
-    font-size: 2em; }
+    font-size: 1.8rem;
+    font-family: "Brandon blk";
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 37px;
+    margin-top: 93px;
+    margin-bottom: 40px; }
+  .footer .download {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 35px;
+    margin-bottom: 36px; }
+  .footer .phone {
+    margin-right: 30px; }
+  .footer li {
+    padding-bottom: 20px; }
+  .footer li a {
+    font-size: 1.5rem;
+    font-family: "Brandon light";
+    color: #e0e0e0;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-decoration: none; }
+  .footer .fa {
+    height: 45px;
+    width: 45px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    font-size: 1.5rem; }

@@ -24,24 +24,27 @@
 		.infoText {
 			overflow: hidden;
 			padding-left: 3.2rem;
+			font-size: 17px;
+			line-height: 31px;
+
 			
 			h4 {
 				font-family: "Brandon blk";
 				margin-top: .8rem;
+				margin-bottom: 5px;
 			}
 			
 			p {
 				font-family: "Roboto light";
 				margin-bottom: 0;
-				word-spacing: 7px;
-				line-height: 31px;
+				word-spacing: 2px;
 				font-weight: bold;
 			}
 		}		
 	}
 
 
-	.tagSection {
+	.tagSection ul {
 		display: inline-flex;
 		flex-wrap: wrap;
 		justify-content: left;

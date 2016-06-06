@@ -2,7 +2,7 @@
 	background-color: #fff;
 	height: 200px;
 	line-height: 200px;
-	position: relative;
+	//position: relative;
 
 	.searchForm {
 		border-color: transparent;
@@ -11,13 +11,15 @@
 		outline: 0;
 		outline-color: transparent;
 		box-shadow: none;
+		padding: 0;
+		margin: 0;
 
 		&::-webkit-input-placeholder {
 			color: black;
 			font-family: "Brandon blk";
 			opacity: none;
 			background-color: #fbfbfb;
-			height: 30px;
+			//height: 30px;
 		}
 	}
 

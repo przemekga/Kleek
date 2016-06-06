@@ -3,44 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
-	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container-fluid">
     <header class="row">
-    	<div class="col-xs-6 logo"><img src="images/logo.png" alt=""></div>
-    	<div class="col-xs-6 login"><span>LOG IN / SIGN UP</span></div>
+    	<div class="col-xs-6 logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+    	<div class="col-xs-6 login"><span><a href="#">LOG IN / SIGN UP</a></span></div>
     </header>
   </div>
 
   <div class="container-fluid">
     <div class="row calendar">
-    	<div class="col-xs-2 backEvent"><i class="fa fa-angle-left" aria-hidden="true"></i>BACK EVENT</div>
+    	<div class="col-xs-2 backEvent"><a href="#"><img src="./images/arrl.png" alt=""></a>BACK EVENT</div>
     	<div class="col-xs-5 dates">
-    		<div class="day"></div>
-    		<div class="day"></div>
-    		<div class="day"></div>
-    		<div class="day"></div>
-    		<div class="day"></div>
-    		<div class="day"></div>
-    		<div class="day"></div>
-    	</div>
+         <ul>
+        		<li class="day"><h1>18</h1><h2>Sat / Apr</h2></li>
+        		<li class="day"><h1>18</h1><h2>Sat / Apr</h2></li>
+        		<li class="day"><h1>27</h1><h2>Mon / Apr</h2></li>
+        		<li class="day"><h1>27</h1><h2>Mon / Apr</h2></li>
+        		<li class="day"><h1>18</h1><h2>Sat / Apr</h2></li>
+        		<li class="day"><h1>27</h1><h2>Mon / Apr</h2></li>
+        		<li class="day"><h1>27</h1><h2>Mon / Apr</h2></li>
+      	 </ul>
+      </div>
     	<div class="col-xs-3 calendarBtn">
       <i class="fa fa-calendar-o" aria-hidden="true"></i>CALENDAR</div>
     	<div class="col-xs-2 preview">PREVIEW EVENT
-      <i class="fa fa-angle-right" aria-hidden="true"></i>
+      <a href="#"><img src="./images/arrr.png" alt=""></a>
   		</div>
     </div>
   </div>
 
   <div class="container-fluid carousel">
+  <div class="owl-carousel">
+    <!-- <div><img src="./images/poster1.jpg" alt=""></div>
+    <div><img src="./images/poster2.jpg" alt=""></div>
+    <div><img src="./images/poster3.jpg" alt=""></div> -->
+  </div>
+
     <div class="container">
       <div class="row">
       	<div class="col-xs-8 images"></div>
-      	<div class="col-xs-4 details">
-          <h1>THE SCOTCH OF ST. JAMES</h1> 
+      	<div class="col-xs-4">
+          <div class="bookingDetails">
+            <h1>The Scotch of st. james</h1><a href="#"><img src="./images/arrowc.png" alt=""></a>
+            <h2>Restaurant & bar & club</h2>
+            <h3>Ibiza Green Tuesdays</h3>
+            <div class="date">
+              <div class="detailsIcon"><img src="./images/cal.png" alt=""></div>
+              <div>Sat. 27th Apr / 10pm-am</div>
+            </div>
+            <div class="date">
+              <div class="detailsIcon"><img src="./images/pointer.png" alt=""></div>
+              <div>Adress, London Street</div>
+            </div>
+            <div class="border"></div>
+            <div class="music">
+              <div class="musicRow">  
+                <div class="detailsIcon">
+                  <img src="./images/musicsm.png" alt="">
+                </div>
+                <div>Techno, Hip-hop</div>            
+              </div>
+              <div class="musicRow"><div class="detailsIcon"><img src="./images/dc.png" alt=""></div>
+              <div>Crowd</div></div>
+            </div>
+
+            <div class="eventPrices"><span>Prices</span> from £200</div>
+            <div class="eventPrices"><span>tables</span> from £1500</div>
+
+            <div class="bookNow">
+              <span>Book now</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -55,8 +94,8 @@
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
           </div>
         </div>
-        <div class="col-xs-offset-1 col-xs-4">  
-          <div class="bookingDetails">
+        <div class="col-xs-offset-1 col-xs-4 sidebar">  
+          <div class="bookingDetails scrollingBox">
             <div class="detailsContent">
               <h1>The Scotch of st. james</h1>
               <h2>Restaurant & bar & club</h2>
@@ -127,13 +166,15 @@
           </div>
 
           <div class="tagSection">
-            <div class="tags">Special Offers / KLEEK exclusive packages</div>
-            <div class="tags">Premium clubs</div>
-            <div class="tags">After work drinks</div>
-            <div class="tags">High energy clubbing</div>
-            <div class="tags">Gay/Lesbian</div>
-            <div class="tags">What's hot</div>
-            <div class="tags">High energy clubbing</div>
+            <ul>
+              <li class="tags">Special Offers / KLEEK exclusive packages</li>
+              <li class="tags">Premium clubs</li>
+              <li class="tags">After work drinks</li>
+              <li class="tags">High energy clubbing</li>
+              <li class="tags">Gay/Lesbian</li>
+              <li class="tags">What's hot</li>
+              <li class="tags">High energy clubbing</li>
+            </ul>
           </div>
         </div>
         <div class="col-xs-6"></div>
@@ -146,7 +187,7 @@
   </div>
 
   <div class="container-fluid map-wrap">
-    <div class="map"></div>
+    <div id="googleMap" class="map"></div>
     <div class="container">
       <div class="row location">
         <div class="col-xs-3 col-xs-offset-1">
@@ -368,13 +409,45 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-3">
-          <h1>Download the appfdsfd</h1>
+          <h1 class="download">Download the app</h1>
+          <a href="#" class="phone"><img src="./images/phone.png" alt=""></a>
+          <a href="#"><img src="./images/appstore.png" alt=""></a>
         </div>
-        <div class="col-xs-3"><h1>Download the app</h1></div>
-        <div class="col-xs-3"><h1>Download the app</h1></div>
-        <div class="col-xs-3"><h1>Download the app</h1></div>
+        <div class="col-xs-3">
+          <h1>Blog</h1>
+          <ul>
+            <li><a href="#">London guide</a></li>
+            <li><a href="#">Nightlife</a></li>
+            <li><a href="#">Food & Drink</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Culture</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-xs-3">
+          <h1>We Are</h1>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-3"><h1>Share</h1>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+        </div>
       </div>
     </div>
   </div>
+
+
+  <script src="./js/jquery-2.2.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="./js/map.js"></script>
+  <script src="owl-carousel/owl.carousel.js"></script>
+  <script src="./js/carousel.js"></script>
+  <script src="./js/scrollbox.js"></script>
 </body>
 </html>

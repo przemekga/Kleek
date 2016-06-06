@@ -1,8 +1,6 @@
 header {
 	background-color: #1b1b1b;
 	height: 8.2rem;
-	//padding: 0;
-	//width: 100%;
 	
 	.logo {
 		line-height: 8rem;
@@ -16,16 +14,19 @@ header {
 	}
 
 	.login {
-		color: white;
 		font-family: 'Brandon';
 		text-align: right;
 		line-height: 8rem;
 		font-weight: 1000;
 		padding: 0;
+		word-spacing: 2px;
+		letter-spacing: 1px;
 		
-		span {
+		span a {
+			color: white;
 			cursor: pointer;
 			margin-right: 4.8rem;
+			text-decoration: none;
 		}
 	}
 }

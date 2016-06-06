@@ -1,17 +1,23 @@
 .calendar {
 	font-family: 'Brandon';
+	font-size: 15px;
 	height: 6.7rem;
 	line-height: 6.7rem;
 	background-color: #ffffff;
-	//margin: 0;
+	letter-spacing: 1px;
+	
+	img {
+		margin-bottom: 6px;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
 
 	.backEvent {
-		padding-left: 4.8rem;
+		padding-left: 3.2rem;
 		padding-right: 0;
 
-		i {
-			margin-right: 2rem;
-			font-size: 2rem;
+		&:hover {
+			cursor: pointer;
 		}
 	}
 
@@ -23,11 +29,27 @@
 		
 		.day {
 			display: inline-block;
-			height: inherit;
+			height: 6.7rem;
 			width: 6.6rem;
 			margin-right: 1rem;
 			background-color: #fbfbfb;
+			text-align: center;
+			color: #6a6a6a;
+			cursor: pointer;
 
+			h1 {
+				font-size: 18px;
+				margin-top: 19px;
+				margin-bottom: 5px;
+				padding: 0;
+			}
+
+			h2 {
+				font-size: 12px;
+				font-family: "Alagreya italic";
+				margin: 0;
+				padding: 0;
+			}
 		}
 
 		.day:last-child {
@@ -38,7 +60,8 @@
 	.calendarBtn {
 		padding-left: 6.7rem;
 		padding-right: 0;
-	
+		cursor: pointer;
+
 		i {
 	    
 			margin-right: 1.8rem;
@@ -48,11 +71,12 @@
 
 	.preview {
 		text-align: right;
-		padding-right: 4.8rem;
+		padding-right: 3.2rem;
 		padding-left: 0;
-		i {
-			margin-left: 2rem;
-			font-size: 2rem;
+
+
+		&:hover {
+			cursor: pointer;
 		}
 	}
 }
