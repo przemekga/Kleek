@@ -3,16 +3,17 @@
 	background-color: #1b1b1b;
 	position: relative;
 
-	.owl-carousel {
+	.car{
 		position: absolute;
 		height: 600px;
 		top: 0;
 		right: calc( 50% - 100px );
 		width: calc( 50% + 100px );
 
-		div img {
+		.owl-carousel div img {
+			display: block;
 	    width: 100%;
-	    height: inherit;
+	    height: auto;
 		}
 	}	
 

@@ -2729,15 +2729,16 @@ header {
   height: 60rem;
   background-color: #1b1b1b;
   position: relative; }
-  .carousel .owl-carousel {
+  .carousel .car {
     position: absolute;
     height: 600px;
     top: 0;
     right: calc( 50% - 100px);
     width: calc( 50% + 100px); }
-    .carousel .owl-carousel div img {
+    .carousel .car .owl-carousel div img {
+      display: block;
       width: 100%;
-      height: inherit; }
+      height: auto; }
   .carousel .images {
     background-color: #3A3A3A;
     height: 100%; }
@@ -3338,7 +3339,6 @@ header {
     height: 45px;
     width: 45px;
     border: 2px solid #fff;
-    border-radius: 50%;
     color: #fff;
     text-align: center;
     line-height: 42px;

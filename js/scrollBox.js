@@ -1,15 +1,25 @@
 $(function() {
-	// Set this variable with the height of your sidebar + header
+
 	var offsetPixels = 800;
-	var endHeight = 2463;
+	var endHeight = 1850;
 
 	$(window).scroll(function() {
-		if ($(window).scrollTop() > offsetPixels ) {
+		if ($(this).scrollTop() > offsetPixels) {
 			$( ".scrollingBox" ).css({
 				"position": "fixed",
-				"top": "15px"
+				"top": "35px"
+				//"width": "inherit"
 			});
-		} else {
+
+				if ($(this).scrollTop() > endHeight) {
+				$( ".scrollingBox" ).css({
+					"position": "absolute",
+					"top": "1000px"
+				});
+			}
+		}	
+
+		else {
 			$( ".scrollingBox" ).css({
 				"position": "static"
 			});
