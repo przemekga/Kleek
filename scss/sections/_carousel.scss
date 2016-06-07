@@ -9,11 +9,28 @@
 		top: 0;
 		right: calc( 50% - 100px );
 		width: calc( 50% + 100px );
+		
+		.shadow {
+			position: absolute;
+			background-color: rgba(0, 0, 0, 0.8);
+			width: 66.66666%;
+			height: 600px;
+			z-index: 3000;
+			float: left;
+		}
 
-		.owl-carousel div img {
-			display: block;
+		.slider  {
+			width: 100%;
+			height: auto;
+		}
+		.image {
 	    width: 100%;
-	    height: auto;
+	    height: 600px;
+		}
+		.slick-dots {
+		  z-index: 4000;
+		  bottom: 20px;
+		  color: white;
 		}
 	}	
 
