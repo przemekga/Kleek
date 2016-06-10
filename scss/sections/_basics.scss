@@ -1,7 +1,7 @@
 .basics {
 	height: 66.5rem;
 	background-color: #ffffff;
-	display: inline-block;
+	//display: inline-block;
 	margin-top: 109px;
 	
 	.sidebar {
@@ -29,6 +29,7 @@
 			font-weight: 500;
 		}
 	}
+	
 
 	@import "bookingDetails";
 	.bookingDetails {
