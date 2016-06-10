@@ -17,3 +17,8 @@
 @import "./sections/events";
 @import "./sections/search";
 @import "./sections/footer";
+
+body { 
+	overflow-x: hidden;
+	padding-right: 15px;
+}

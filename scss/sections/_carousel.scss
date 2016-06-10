@@ -26,11 +26,6 @@
 
 	}	
 
-	.images {
-		background-color: #3A3A3A;
-		height: 100%;
-	}
-
 	.bookingDetails {
 		padding-top: 67px;
 		width: 80%;
@@ -157,3 +152,21 @@
 		}
 	}
 }
+
+.slick-slide {
+  position: relative; 
+}
+
+.slick-slide .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  transition: all 0.5s ease; 
+}
+.slick-slide.slick-active .black {
+  background: transparent; 
+} 

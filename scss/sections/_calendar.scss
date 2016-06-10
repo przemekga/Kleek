@@ -26,20 +26,23 @@
 		height: inherit;
 		padding: 0;
 		text-align: right;
-		display: inline-flex;
+		//display: inline-flex;
 		
 		.day {
 			display: inline-block;
 			height: 6.7rem;
-			width: 6.6rem;
+			width: 11%;
 			margin-right: 1rem;
 			background-color: #fbfbfb;
 			text-align: center;
 			color: #cecece;
+			cursor: default;
+
+			//@media (min-width: )
 
 			h1 {
-				font-size: 18px;
-				margin-top: 19px;
+				font-size: 22px;
+				margin-top: 15px;
 				margin-bottom: 5px;
 				padding: 0;
 			}
@@ -59,6 +62,9 @@
 		.day-available {
 			color: #6a6a6a;
 			cursor: pointer;
+			background-image: url('../../images/indicator.png');
+			background-repeat: no-repeat;
+	    background-position: top center; 
 		}
 
 		.day-active {

@@ -2689,19 +2689,19 @@ header {
     background-color: #ffffff;
     height: inherit;
     padding: 0;
-    text-align: right;
-    display: inline-flex; }
+    text-align: right; }
     .calendar .dates .day {
       display: inline-block;
       height: 6.7rem;
-      width: 6.6rem;
+      width: 11%;
       margin-right: 1rem;
       background-color: #fbfbfb;
       text-align: center;
-      color: #cecece; }
+      color: #cecece;
+      cursor: default; }
       .calendar .dates .day h1 {
-        font-size: 18px;
-        margin-top: 19px;
+        font-size: 22px;
+        margin-top: 15px;
         margin-bottom: 5px;
         padding: 0; }
       .calendar .dates .day h2 {
@@ -2713,7 +2713,10 @@ header {
       margin-right: 0; }
     .calendar .dates .day-available {
       color: #6a6a6a;
-      cursor: pointer; }
+      cursor: pointer;
+      background-image: url("../../images/indicator.png");
+      background-repeat: no-repeat;
+      background-position: top center; }
     .calendar .dates .day-active {
       background-color: #9b7252;
       width: 90px;
@@ -2753,9 +2756,6 @@ header {
       z-index: 4000;
       bottom: 20px;
       color: white; }
-  .carousel .images {
-    background-color: #3A3A3A;
-    height: 100%; }
   .carousel .bookingDetails {
     padding-top: 67px;
     width: 80%; }
@@ -2848,17 +2848,19 @@ header {
 
 .slick-slide {
   position: relative; }
-  .slick-slide .black {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 2;
-    transition: all 0.5s ease; }
-  .slick-slide.slick-active .black {
-    background: transparent; }
+
+.slick-slide .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  transition: all 0.5s ease; }
+
+.slick-slide.slick-active .black {
+  background: transparent; }
 
 .basics {
   height: 66.5rem;
@@ -3236,13 +3238,19 @@ header {
     float: left;
     overflow: hidden;
     top: 450px;
-    left: 5%; }
+    left: 3%; }
+    @media (min-width: 1500px) {
+      .events .arrowLeft {
+        left: 10%; } }
   .events .arrowRight {
     position: absolute;
     top: 450px;
-    right: 5%;
+    right: 3%;
     transform: scaleX(-1);
     filter: FlipH; }
+    @media (min-width: 1500px) {
+      .events .arrowRight {
+        right: 10%; } }
 
 .venueName {
   margin-top: 100px;
@@ -3394,3 +3402,7 @@ header {
     text-align: center;
     line-height: 42px;
     font-size: 1.5rem; }
+
+body {
+  overflow-x: hidden;
+  padding-right: 15px; }

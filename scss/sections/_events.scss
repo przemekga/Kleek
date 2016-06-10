@@ -7,15 +7,23 @@
 		float: left;
 		overflow: hidden;
 		top: 450px;
-		left: 5%;
+		left: 3%;
+
+		@media (min-width: 1500px) {
+			left: 10%;
+		}
 	}
 
 	.arrowRight {
 		position: absolute;
 		top: 450px;
-		right: 5%;
+		right: 3%;
 		transform: scaleX(-1);
-    filter: FlipH;
+    	filter: FlipH;
+
+    	@media (min-width: 1500px) {
+			right: 10%;
+		}
 	}
 } 
 

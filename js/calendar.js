@@ -1,8 +1,6 @@
 $(function() {
 	$('.day-available').on('click', function() {
-		$(this).animate({
-			width: '90px',
-			'background-color': '#9b7252'
-		});
+		$('.day-available').removeClass('day-active');
+		$(this).addClass('day-active');
 	})
 })
