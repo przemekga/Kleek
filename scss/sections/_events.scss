@@ -12,6 +12,10 @@
 		@media (min-width: 1500px) {
 			left: 10%;
 		}
+
+		@media (min-width: 1900px) {
+			left: 15%;
+		}
 	}
 
 	.arrowRight {
@@ -23,6 +27,10 @@
 
     	@media (min-width: 1500px) {
 			right: 10%;
+		}
+
+		@media (min-width: 1900px) {
+			right: 15%;
 		}
 	}
 } 

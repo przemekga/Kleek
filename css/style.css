@@ -3242,6 +3242,9 @@ header {
     @media (min-width: 1500px) {
       .events .arrowLeft {
         left: 10%; } }
+    @media (min-width: 1900px) {
+      .events .arrowLeft {
+        left: 15%; } }
   .events .arrowRight {
     position: absolute;
     top: 450px;
@@ -3251,6 +3254,9 @@ header {
     @media (min-width: 1500px) {
       .events .arrowRight {
         right: 10%; } }
+    @media (min-width: 1900px) {
+      .events .arrowRight {
+        right: 15%; } }
 
 .venueName {
   margin-top: 100px;
