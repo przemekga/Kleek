@@ -2683,14 +2683,22 @@ header {
   .calendar .backEvent {
     padding-left: 3.2rem;
     padding-right: 0; }
+    @media (max-width: 1237px) {
+      .calendar .backEvent {
+        text-align: center;
+        padding: 0; }
+        .calendar .backEvent span {
+          display: none; } }
     .calendar .backEvent:hover {
       cursor: pointer; }
-  .calendar .dates {
+  .calendar .dates ul {
     background-color: #ffffff;
-    height: inherit;
+    height: 6.7rem;
     padding: 0;
-    text-align: right; }
-    .calendar .dates .day {
+    text-align: center;
+    margin-bottom: 0;
+    white-space: nowrap; }
+    .calendar .dates ul .day {
       display: inline-block;
       height: 6.7rem;
       width: 11%;
@@ -2698,26 +2706,27 @@ header {
       background-color: #fbfbfb;
       text-align: center;
       color: #cecece;
-      cursor: default; }
-      .calendar .dates .day h1 {
+      cursor: default;
+      min-width: 57px; }
+      .calendar .dates ul .day h1 {
         font-size: 22px;
         margin-top: 15px;
         margin-bottom: 5px;
         padding: 0; }
-      .calendar .dates .day h2 {
+      .calendar .dates ul .day h2 {
         font-size: 12px;
         font-family: "Alagreya italic";
         margin: 0;
         padding: 0; }
-    .calendar .dates .day:last-child {
+    .calendar .dates ul .day:last-child {
       margin-right: 0; }
-    .calendar .dates .day-available {
+    .calendar .dates ul .day-available {
       color: #6a6a6a;
       cursor: pointer;
       background-image: url("../../images/indicator.png");
       background-repeat: no-repeat;
       background-position: top center; }
-    .calendar .dates .day-active {
+    .calendar .dates ul .day-active {
       background-color: #9b7252;
       width: 90px;
       color: #fdfdfd;
@@ -2725,19 +2734,33 @@ header {
   .calendar .calendarBtn {
     padding-left: 6.7rem;
     padding-right: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #ffffff; }
     .calendar .calendarBtn i {
       margin-right: 1.8rem;
       font-size: 2.4rem; }
+    @media (max-width: 798px) {
+      .calendar .calendarBtn {
+        text-align: center; }
+        .calendar .calendarBtn span {
+          display: none; } }
   .calendar .preview {
+    background-color: #ffffff;
     text-align: right;
     padding-right: 3.2rem;
     padding-left: 0; }
+    @media (max-width: 1237px) {
+      .calendar .preview {
+        text-align: center;
+        padding: 0; }
+        .calendar .preview span {
+          display: none; } }
     .calendar .preview:hover {
       cursor: pointer; }
 
 .carousel {
-  height: 60rem;
+  font-size: 8px;
+  height: 600px;
   background-color: #1b1b1b;
   position: relative;
   padding-left: 0; }
@@ -2757,35 +2780,36 @@ header {
       bottom: 20px;
       color: white; }
   .carousel .bookingDetails {
-    padding-top: 67px;
+    padding-top: 6.7em;
     width: 80%; }
     .carousel .bookingDetails h1 {
       display: inline;
-      font-size: 33px;
+      font-size: 3.3em;
       font-family: "Brandon blk";
       text-transform: uppercase;
       color: #fefefe;
       margin-bottom: 0; }
     .carousel .bookingDetails img {
       display: inline;
-      margin-left: 16px;
-      margin-bottom: 13px; }
+      margin-left: 1.6em;
+      margin-bottom: 1.3em; }
     .carousel .bookingDetails h2 {
       text-transform: uppercase;
       color: #fdfdfd;
-      font-size: 16px;
+      font-size: 1.6em;
       font-family: "Brandon light";
-      letter-spacing: 3px;
-      margin-top: 12px; }
+      letter-spacing: .3em;
+      margin-top: 1.2em; }
     .carousel .bookingDetails h3 {
       color: #9d7353;
       font-family: "Alagreya Italic";
       font-weight: normal;
-      margin-top: 20px; }
+      font-size: 2.4em;
+      margin-top: 2em; }
     .carousel .bookingDetails .date {
       color: #e0e0e0;
       font-family: "Alagreya Italic";
-      font-size: 2.1rem;
+      font-size: 2.1em;
       margin-bottom: 8px; }
       .carousel .bookingDetails .date:first-of-type {
         margin-top: 20px; }
@@ -2803,7 +2827,7 @@ header {
       border-bottom: 2px solid #a97852; }
     .carousel .bookingDetails .music {
       font-family: "Brandon light";
-      font-size: 1.6rem;
+      font-size: 1.6em;
       color: #fdfdfd;
       text-transform: uppercase;
       margin-top: 20px;
@@ -2822,7 +2846,7 @@ header {
     .carousel .bookingDetails .eventPrices {
       color: #a97852;
       font-family: "Brandon light";
-      font-size: 1.8rem;
+      font-size: 1.8em;
       margin-top: 3px;
       margin-bottom: 0;
       word-spacing: 2px;
@@ -3046,7 +3070,9 @@ header {
     text-transform: uppercase;
     margin-top: 8.4rem; }
     .location .showDirection:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: #a97852;
+      color: #fff; }
     .location .showDirection span {
       margin-left: 5.6rem;
       margin-right: 5.6rem; }

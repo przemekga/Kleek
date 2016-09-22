@@ -1,7 +1,6 @@
 .basics {
 	height: 66.5rem;
 	background-color: #ffffff;
-	//display: inline-block;
 	margin-top: 109px;
 	
 	.sidebar {
@@ -33,6 +32,6 @@
 
 	@import "bookingDetails";
 	.bookingDetails {
-		border: 2px solid #1b1b1b;
+		border: 2px solid $bgColor;
 	}
 }

@@ -4,8 +4,7 @@ $(document).ready(function(){
     arrows: true,
     infinite: true,
 		speed: 300,
-		//swipe: true,
-    draggable: false,
+		swipe: true,
     prevArrow: $('.arrowLeft'),
     nextArrow: $('.arrowRight')
   });

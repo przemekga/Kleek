@@ -1,11 +1,7 @@
 .location {
 	height: 59.1rem;
 	
-
-
 	.locDetails {
-		// TODO: oushfhwerfkjwerf lehfgerf ljhef ijef ;kwefd
-		//margin-left: $marginLeft;
 		margin-top: 10rem;
 		width: 30.2rem;
 		line-height: 30px;
@@ -26,15 +22,17 @@
 		width: 25.9rem;
 		height: 4.8rem;
 		line-height: 4.5rem;
-		border: 2px solid #a97852;
+		border: 2px solid $borderColor;
 		font-family: "Brandon";
 		font-size: 1.6rem;
-		color: #a97852;
+		color: $borderColor;
 		text-transform: uppercase;
 		margin-top: 8.4rem;
 
 		&:hover {
 			cursor: pointer;
+			background-color: $borderColor;
+			color: #fff;
 		}
 
 		span {
@@ -49,7 +47,6 @@
 .map-wrap{
 	position: relative;
 	.map {
-		//background-color: #E1E1E1;
 		height: 591px;
 		position: absolute;
 		top: 0;

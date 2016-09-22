@@ -14,28 +14,30 @@
   <div class="container-fluid">
 
     <header class="row">
-    	<div class="col-xs-2 logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
-    	<div class="col-xs-2 col-xs-offset-8 login"><span><a href="#">LOG IN / SIGN UP</a></span></div>
+    	<div class="col-xs-6 logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+    	<div class="col-xs-6 login"><span><a href="#">LOG IN / SIGN UP</a></span></div>
     </header>
   </div>
 
   <div class="container-fluid">
     <div class="row calendar">
-    	<div class="col-xs-2 backEvent"><a href="#"><img src="./images/arrl.png" alt=""></a>BACK EVENT</div>
+    	<div class="col-xs-2 backEvent"><a href="#"><img src="./images/arrl.png" alt=""></a><span>BACK EVENT</span></div>
     	<div class="col-xs-5 dates">
-         <ul>
+         <ul class="dragscroll">
         		<li class="day day-available"><h1>18</h1><h2>Sat / Apr</h2></li>
         		<li class="day day-available day-active"><h1>18</h1><h2>Sat / Apr</h2></li>
         		<li class="day"><h1>27</h1><h2>Mon / Apr</h2></li>
         		<li class="day"><h1>27</h1><h2>Mon / Apr</h2></li>
         		<li class="day day-available"><h1>18</h1><h2>Sat / Apr</h2></li>
         		<li class="day"><h1>27</h1><h2>Mon / Apr</h2></li>
-        		<li class="day"><h1>27</h1><h2>Mon / Apr</h2></li>
+        		
+            <li class="day"><h1>27</h1><h2>Mon / Apr</h2></li>
+
       	 </ul>
       </div>
     	<div class="col-xs-3 calendarBtn">
-      <i class="fa fa-calendar-o" aria-hidden="true"></i>CALENDAR</div>
-    	<div class="col-xs-2 preview">PREVIEW EVENT
+      <i class="fa fa-calendar-o" aria-hidden="true"></i><span>CALENDAR</span></div>
+    	<div class="col-xs-2 preview"><span>PREVIEW EVENT</span>
       <a href="#"><img src="./images/arrr.png" alt=""></a>
   		</div>
     </div>
@@ -493,8 +495,9 @@
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="./js/map.js"></script>
   <script src="./js/carousel.js"></script>
-  <script src="./js/scrollbox.js"></script>
+  <script src="./js/scrollBox.js"></script>
   <script src="./js/calendar.js"></script>
   <script src="./js/eventSlider.js"></script>
+  <script src="./js/dragscroll.js"></script>
 </body>
 </html>
